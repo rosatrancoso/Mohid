@@ -1747,7 +1747,7 @@ if1:    if (Me%TimeWindow) then
                 CorrectCornersOnce = .false.
             endif                                    
 
-            if (Bathymetry_OK  .and. & LandUse_OK .and. &
+            if (Bathymetry_OK  .and. LandUse_OK .and. &
                 CenterX_OK     .and. CenterY_OK .and. &
                 ConnectionX_OK .and. ConnectionY_OK) exit
 
