@@ -8163,8 +8163,8 @@ cd1 :   if ( SurfaceRadiation_                              == Property .or.    
     subroutine FromGeo2Meters(Lat, Long, LatRef, LongRef, X, Y)
 
         !Arguments----------------------------------------------------------------------
-        real(8), intent(IN)     :: Lat, Long, LatRef, LongRef
-        real(8), intent(OUT)    :: X, Y
+        real, intent(IN)     :: Lat, Long, LatRef, LongRef
+        real, intent(OUT)    :: X, Y
 
         !Local--------------------------------------------------------------------------
         real(8)                 :: radians, EarthRadius, Rad_Lat, CosenLat
