@@ -1,7 +1,7 @@
 FC = gfortran
 
 DEBUG_FLAGS     = -g -fallow-argument-mismatch
-LANG_FLAGS      = #-cpp -real_size 64
+LANG_FLAGS      = #-fdefault-real-8
 WARNINGS_FLAGS  = -w
 OPT_FLAGS       = -fconvert=little-endian -ffree-line-length-none
 OTH_FLAGS       =
