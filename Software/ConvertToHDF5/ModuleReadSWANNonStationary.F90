@@ -978,24 +978,24 @@ d3:         do ii= Me%WorkSize%ILB,Me%WorkSize%IUB
                         a1 = 0; a2 = 0; a3 = 0; a4 = 0
                             
                         if (Me%BoundaryFacesU(i, j) == Not_Boundary .and. Me%WaterPoints2D(i, j-1) == 1 .and. &                                
-                            Me%NonComputedPoint(n, i, j-1).ne..true.) then
+                            Me%NonComputedPoint(n, i, j-1) .neqv. .true.) then
                                 
                             a1 = 1
                                 
                         elseif(Me%BoundaryFacesU(i, j+1) == Not_Boundary .and. Me%WaterPoints2D(i, j+1) == 1 .and. &
-                               Me%NonComputedPoint(n, i, j+1).ne..true.) then
+                               Me%NonComputedPoint(n, i, j+1) .neqv. .true.) then
                                 
                             a2 = 1
                                 
                         endif
                             
                         if (Me%BoundaryFacesV(i, j) == Not_Boundary .and. Me%WaterPoints2D(i-1, j) == 1 .and. &
-                            Me%NonComputedPoint(n, i-1, j).ne..true.) then
+                            Me%NonComputedPoint(n, i-1, j) .neqv. .true.) then
                                 
                             a3 = 1
                                 
                         elseif(Me%BoundaryFacesV(i+1, j) == Not_Boundary .and. Me%WaterPoints2D(i+1, j) == 1 .and. &
-                                Me%NonComputedPoint(n, i+1, j).ne..true.) then
+                                Me%NonComputedPoint(n, i+1, j) .neqv. .true.) then
                                 
                             a4 = 1
                                 
